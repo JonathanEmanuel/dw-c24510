@@ -1,0 +1,20 @@
+header {
+    background-color: #49378C;
+    min-height: 300px;
+}
+
+img {
+    border-radius: 16px;
+}
+
+main {
+    background-image: url('../img/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+footer p {
+    font-size: 200%;
+}

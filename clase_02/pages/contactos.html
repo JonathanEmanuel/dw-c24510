@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html"> Inicio</a>
+            </li>
+            <li>
+                <a href="formacion.html">Formación</a>
+            </li>
+            <li>
+                <a href="trabajos.html">Trabajos</a>
+            </li>
+            <li>
+                <a href="contactos.html"> Contactos</a>
+            </li>
+            <li>
+                <a href="otra_pagina.html"> Otra página </a>
+            </li>
+            <li>
+                <a href="https://www.coderhouse.com/">CoderHouse</a>
+            </li>
+        </ul>
+    </nav>  
+    <main>
+        <h1>Contactos</h1>
+        <form action="contactos.html" method="get">
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" required>
+            </div>
+
+
+            <label for="apellido">Apellido</label>
+            <input name="apellido" type="text" required>
+            <br><br>
+            <label for="email">Correo electronico</label>
+            <input type="email" placeholder="usuario@mail.com" required>
+            <br><br>
+
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="sexo">
+            </div>
+
+
+            <div>
+                <h4>Como nos conocio</h4>
+
+                <input type="checkbox" name="">
+                <label for="">Redes sociales</label>
+
+                <input type="checkbox" name="">
+                <label for="">Referencia de personas</label>
+
+                <input type="checkbox" name="">
+                <label for="">En Google</label>
+            </div>
+
+            <label for="datos">Datos</label>
+            <br>
+            <textarea name="" id="" cols="20" rows="5" placeholder="Escriba una descripción"></textarea>
+            
+
+            <div>
+                <label for="">Profesión</label>
+                <br>
+                <select name="profesion" id="">
+                    <option value="programador">Programador</option>
+                    <option value="dise">Diseñador</option>
+                    <option value="other">Otros</option>
+                </select>
+
+            </div>
+            <br>
+
+            <input type="submit" value="Registrarme">
+            <input type="reset" value="Limpiar">
+        </form>
+
+    </main>
+    <footer>
+        <p>Creditos</p>
+    </footer>
+</body>
+
+</html>
