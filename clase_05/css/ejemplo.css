@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: springgreen;
+    height: 20vh;
+}
+
+.main {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.nav {
+    background-color: hotpink;
+    width: 20%;
+}
+
+.aside {
+    background-color: khaki;
+    width: 22%;
+}
+
+.article {
+    background-color: lightblue;
+    width: 45%;
+}
+
+.footer {
+    background-color: springgreen;
+    height: 10vh;
+}

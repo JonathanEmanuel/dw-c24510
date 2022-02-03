@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgreen;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contenedor Padre */
+.container {
+    background-color: #f1f1f1;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Hijos */
+.container__caja {
+    height: 200px;
+    width: 200px;
+    background-color: slateblue;
+    border: 1px solid #ffff;
+}
+
+.container__caja--mayor{
+    height: 250px;
+    order: 2;
+}
+.container__img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: lightgreen;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
