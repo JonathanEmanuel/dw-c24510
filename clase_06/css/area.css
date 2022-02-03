@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'comfortaa', sans-serif;
+}
+
+
+/* Pader */
+.grid-area {
+    background-color: lightskyblue;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "menu encabezado encabezado"
+    "menu tel publicidad "
+    "menu pc publicidad"
+    "pie pie pie";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+  
+
+    /*
+    justify-items: stretch;
+    align-items: center;
+    */
+
+}
+
+/* hijos */
+.header {
+    background-color: #e68a8a;
+    grid-area: encabezado;
+}
+
+.nav {
+    background-color: turquoise;
+    grid-area: menu;
+    align-self: center;
+    justify-self: center
+}
+
+.product1 {
+    background-color: slateblue;
+    grid-area: tel;
+}
+
+.product2 {
+    background-color: slateblue;
+    grid-area: pc;
+}
+
+.aside {
+    background-color: thistle;
+    grid-area: publicidad;
+}
+.footer {
+    background-color: slategray;
+    grid-area: pie;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
