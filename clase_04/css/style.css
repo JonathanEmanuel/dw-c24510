@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+.header {
+    height: 100px;
+}
+
+.header__title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* NAV */
+.nav {
+    background-color: cadetblue;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav__logo {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.nav__search {
+    display: inline;
+    margin-left: 50px;
+}
+
+.nav__input {
+    height: 35px;
+    border-radius: 10px;
+}
+
+.nav__links {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.nav__link--active {
+    font-weight: 900;
+    border-bottom: 2px solid blueviolet
+}
+
+/* MAIN */
+.card {
+    height: 300px;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 2px solid  #ccc;
+    display: inline-block;
+
+    margin: 80px 0 20px 50px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.card--relative {
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    z-index: 1;
+}
+
+.card__header{
+    background-color: slateblue;
+    height: 30px;
+    text-align: center;
+}
+
+.card__body {
+    margin-top: 20px;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+
+.caja {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100px;
+    display: none;
+}
+
+/* FOOTER */
+.footer__copyright {
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+    color: #f1f1f1;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
