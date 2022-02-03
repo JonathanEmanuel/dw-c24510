@@ -1,0 +1,22 @@
+/*
+ Esto es un comentario
+*/
+
+
+#violeta {
+    color: violet;
+}
+
+.rojo {
+    color: rgb(26, 180, 39);
+}
+
+/* 1rem = 16px */
+p {
+    color: green !important;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: #CFACF2;
+}

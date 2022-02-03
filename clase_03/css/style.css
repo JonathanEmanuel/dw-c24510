@@ -1,0 +1,63 @@
+
+/* HEADER */
+header {
+    background-image: url('../images/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+
+/* NAV */
+nav ul {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    
+}
+
+/* MAIN */
+h1 {
+    color: #fff;
+    text-align: center;
+}
+p {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+
+p {
+    color: green;
+}
+
+.importante {
+    color: red;
+    font-style: italic;
+}
+
+.borde-redondo {
+  border-radius: 16px;  
+}
+
+#seccion-1{
+    background-image: url('../images/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.interlineado {
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer p {
+    color: violet;
+    font-weight: 600;
+}
