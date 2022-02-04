@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'comfortaa', sans-serif;
+}
+
+.gridResponsive {
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "caja-1 caja-1 caja-2"
+    "caja-1 caja-1 caja-3"
+    "caja-4 caja-5 caja-6";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gridResponsive__caja {
+    font-size: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridResponsive__caja--1 {
+    background-color: slateblue;
+    grid-area: caja-1;
+}
+
+.gridResponsive__caja--2 {
+    background-color: slategray;
+    grid-area: caja-2;
+}
+
+.gridResponsive__caja--3 {
+    background-color: steelblue;
+    grid-area: caja-3;
+}
+
+.gridResponsive__caja--4 {
+    background-color: sandybrown;
+    grid-area: caja-4;
+}
+
+.gridResponsive__caja--5 {
+    background-color:teal;
+    grid-area: caja-5;
+}
+
+.gridResponsive__caja--6 {
+    background-color: thistle;
+    grid-area: caja-6;
+}
+
+
+@media screen and (max-width: 1200px) { 
+    .gridResponsive {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-1 caja-2 caja-2"
+        "caja-3 caja-2 caja-2"
+        "caja-4 caja-5 caja-6";
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-1 caja-2 caja-3"
+        "caja-4 caja-5 caja-6";
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-1"
+        "caja-2"
+        "caja-3"
+        "caja-4"
+        "caja-5"
+        "caja-6" ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+}

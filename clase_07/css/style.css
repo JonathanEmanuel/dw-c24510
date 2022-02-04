@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'comfortaa', sans-serif;
+}
+ 
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+    .responsive {
+        background-color: #72CEF2;
+    }
+
+    .responsive__header {
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 768px) {
+    .responsive {
+        background-color: #F25764;
+    }
+    .responsive__header {
+        margin-top: 100px;
+        font-size: 38px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 576px)  {
+    .responsive {
+        background-color: #F2DC99;
+    }
+    .responsive__header {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .responsive {
+        background-color: #03A678;
+    }
+}
