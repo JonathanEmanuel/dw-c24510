@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'comfortaa', sans-serif;
+}
+
+.header {
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to left, #f5f5f5, rgb(93, 91, 233));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    padding: 0 20px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: slateblue;
+    font-size: 18px;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.box:nth-child(1):hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.box:nth-child(even){
+    background-color: tomato;
+}
+
+.box:nth-child(2):hover{
+    transform: rotateX(40deg);
+    cursor: pointer;
+
+}
+
+.box:nth-child(4):hover{
+    transform: skew(30deg);
+}
+
+.column {
+    border: 1px solid snow;
+}
+
+.boton__rojo {
+    background-color: red;
+}
+
+.boton__rojo:hover {
+    background-color: rgb(93, 91, 233);
+}
+
+.footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
