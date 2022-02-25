@@ -1,0 +1,27 @@
+$violeta:  #710273;
+$secundario: #3F3F40;
+$blaco: #fff;
+$borde: 5px;
+.card {
+    border-radius: 5px;
+    border: 1px solid $violeta;
+    width: 300px;
+    box-shadow: 5px 5px 10px $secundario;
+    .card__img{
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: $borde;
+        }
+    };
+    .card__title {
+        background-color: $violeta;
+        color: $blaco;
+        height: 30px;
+    };
+    .card__body {
+        display: none;
+    }
+    
+}
