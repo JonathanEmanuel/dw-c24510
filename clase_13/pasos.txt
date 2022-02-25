@@ -1,0 +1,5 @@
+1. Inicilizar el proyecto -> crea el archivo package.json
+    npm init
+2. Instalar el compilador
+    npm install -D node-sass nodemon
+3. Configurar el package.json
