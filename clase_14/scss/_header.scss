@@ -1,0 +1,16 @@
+.header {
+    background-color: #f5f5f5;
+    background-image: $degradado;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header_alto;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px 1px rgba(13, 13, 13,0.7);
+    .header__logo {
+        height: $header_alto - 50;
+    }
+    .header__title {
+        font-size: $header_alto / 3;
+    }
+}

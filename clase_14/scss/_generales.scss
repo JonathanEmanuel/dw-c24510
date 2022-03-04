@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Condicionales
+@if $modo == dark {
+
+    body {
+        background-color: $dark_background;
+    }
+
+    .card {
+        background-color: $dark_background_card;
+        color: $dark_text;
+        a {
+            color: $dark_link;
+        }
+    }
+}
+
+// Bucles  
+@for $i from 1 through 6 {
+    .h#{$i} {
+        color: white;
+        font-size: $header_alto / #{$i};
+    }
+}
+
+@for $j from 1 through 6 {
+
+    .image-#{$j} {
+        width: $header_alto / #{$j};
+        height: auto;
+    }
+}
+
+// each
+@each $var in red, blue, green, purple {
+    .#{$var} {
+        color: $var;
+        height: $header_alto / 2;
+    }
+}
+
+@each $var in facebook, instagram, linkedin, twitter {
+    .social-#{$var} {
+        background-image: url("img/#{var}.png" )
+    }
+}
+
+// maps
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30,
+        yotube: #c72f2f
+);
+
+.icon-social {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   &:hover.btn--#{$red} {
+        background-color: $color;
+        @extend .icon-social;
+   }
+}
+
+
+
+
+// Mixins
+@mixin sizes($width, $height, $color) {
+    height: $height;
+    width: $width;
+    background-color: $color
+}
+
+.box {
+    @include sizes(500px, 50px, red);
+}
+ 
