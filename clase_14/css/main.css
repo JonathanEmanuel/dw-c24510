@@ -103,8 +103,7 @@ body {
   background-image: url("img/var.png"); }
 
 .icon-social, .btn--twitter:hover, .btn--facebook:hover, .btn--send-mail:hover, .btn--yotube:hover {
-  font-size: 2.5rem;
-  padding: 1.5rem; }
+  font-size: 2.5rem; }
 
 /*Creamos el bucle para usar los valores del mapa*/
 :hover.btn--twitter {
